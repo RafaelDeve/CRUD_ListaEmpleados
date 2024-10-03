@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/rafaelaybar/Desktop/ITLA/PROGRAMACIÓN II/ListaEmpleados
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/rafaelaybar/Desktop/ITLA/PROGRAMACIÓN II/ListaEmpleados/Pages/Empleados/CrearEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbGVhZG9zL0NyZWFyRW1wbGVhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rafaelaybar/Desktop/ITLA/PROGRAMACIÓN II/ListaEmpleados/Pages/Empleados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbGVhZG9zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/rafaelaybar/Desktop/ITLA/PROGRAMACIÓN II/ListaEmpleados/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

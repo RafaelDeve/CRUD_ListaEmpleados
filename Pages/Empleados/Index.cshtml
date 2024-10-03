@@ -1,0 +1,51 @@
+@page
+@model ListaEmpleados.Pages.Empleados.Index
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="text-center mb-4">Lista de empleados</h2>
+
+<div class="d-flex justify-content-between mb-3">
+    <a class="btn btn-primary" href="/Empleados/CrearEmpleado">Nuevo empleado</a>
+    <input class="form-control w-25" type="search" placeholder="Buscar empleado" aria-label="Buscar empleado">
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Puesto</th>
+            <th>Salario</th>
+            <th>Fecha de inicio</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var empleado in Model.ListaEmpleado)
+        {
+            <tr>
+                <td>@empleado.Id</td>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Apellido</td>
+                <td>@empleado.CorreoElectronico</td>
+                <td>@empleado.Puesto</td>
+                <td>@empleado.Salario</td>
+                <td>@empleado.FechaDeInicio.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <span class="badge @(empleado.EstadoEmpleo == "Activo" ? "bg-success" : "bg-danger")">
+                        @empleado.EstadoEmpleo
+                    </span>
+                </td>
+                <td>
+                    <a class="btn btn-warning btn-sm" href="/Empleados/Edit?id=@empleado.Id">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="/Empleados/Delete?id=@empleado.Id">Borrar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
