@@ -1,0 +1,26 @@
+@page
+@model ListaEmpleados.Pages.Empleados.BorrarEmpleado
+@{
+    ViewData["Title"] = "BorrarEmpleado";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="mx-auto rounded border p-4" style="width:400px">
+    <h2 class="text-center mb-3" >Borrar empleado</h2>
+    <hr/>
+    <p>Seguro que quieres eliminar el empleado?</p>
+    <p>Empleado ID=@Request.Query["id"]</p>
+
+    <form method="post">
+
+            <div class="row">
+                <div class="col-sm-6 d-grid">
+                    <button type="submit" class="btn btn-danger">Borrar</button>
+                </div>
+                <div class="col-sm-6 d-grid">
+                    <a class="btn btn-danger" href="/Empleados/Index">Cancelar</a>
+                </div>
+            </div>
+    </form>
+</div>

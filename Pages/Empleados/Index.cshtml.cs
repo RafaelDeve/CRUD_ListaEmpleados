@@ -27,7 +27,7 @@ namespace ListaEmpleados.Pages.Empleados
                     using(SqlCommand command = new SqlCommand(sql, connection)){
                         using (SqlDataReader reader = command.ExecuteReader()) {
                             while (reader.Read()){
-                                // Initialize all required properties in the object initializer
+                                
                                 EmpleadoInfo empleadoInfo = new EmpleadoInfo {
                                     Id = reader.GetInt32(0),
                                     Nombre = reader.GetString(1),
